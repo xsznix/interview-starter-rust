@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "(macOS/Linux) Run program",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=interview-starter-rust",
+          "--package=interview-starter-rust"
+        ],
+        "filter": {
+          "name": "interview-starter-rust",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole"
+    },
+    {
+      "name": "(Windows) Run program",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/target/debug/interview-starter-rust.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": "internalConsole"
+    }
+  ]
+}

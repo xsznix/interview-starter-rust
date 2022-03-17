@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "rust-lang.rust",
+    "vadimcn.vscode-lldb",
+    "ms-vscode.cpptools"
+  ]
+}
